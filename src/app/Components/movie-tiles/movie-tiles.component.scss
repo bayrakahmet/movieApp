@@ -1,0 +1,29 @@
+.movietile-wrapper{
+    max-width: 200px;
+    max-height: 300px;
+    margin-left: 30%;
+    
+    .poster-wrapper{
+        img {
+            transition: all 0.5s ease;
+        }
+        :hover{
+            transform: scale(1.1);
+        }
+    }
+
+    .icon-bar{
+        position: relative;
+        color: white;
+        bottom: 29px;
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+        overflow: hidden;
+    }
+    
+    .icon-bar:hover{
+        bottom: 29px;
+        transform: scale(1);
+    }
+}

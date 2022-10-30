@@ -1,0 +1,21 @@
+.toolbar-container{
+    width: 100%;
+    margin: -10px;
+    height: 65px;
+    background-color: brown;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 40% 55%;
+
+    .nav-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .page-title{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

@@ -1,0 +1,25 @@
+<div class="add-movie">
+    <form class="add-movie-form" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+            <label for="movieTitle">Film Adı = </label>
+            <!--<input type="text" name="movieTitle" [(ngmodel)]="movieTitle" id="movieTitle" placeholder="Film Adını giriniz"> -->
+            <input type="text" name="movieTitle" (ngmodel)="movieTitle" id="movieTitle" placeholder="Film Adını giriniz">
+        </div>
+
+        <div class="form-control">
+            <label for="image">Image Url = </label>
+            <input type="text" name="image" (ngmodel)="image" id="image" placeholder="Foto linki ekle">
+        </div>
+
+        <div class="form-control form-control-check">
+            <label for="watched"> Watched = </label>
+            <input type="checkbox" name="watched" (ngmodel)="isWatched" id="watched">
+        </div>
+
+        <div class="form-control form-control-check">
+            <label for="fav">Favourite = </label>
+            <input type="checkbox" name="fav" (ngmodel)="isFav" id="fav">
+        </div>
+        <input type="submit" value="Yeni Film Oluştur" class="btn btn-block"/>
+    </form>
+</div>

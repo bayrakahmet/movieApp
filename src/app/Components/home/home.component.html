@@ -1,0 +1,43 @@
+<div class="watchlist-wrapper">
+    <h3 *ngIf="movies.length < 1"> Film yok...</h3>
+    <br>
+    <h3 style="margin-left: 33%;" *ngIf="yetToWatchMovies.length">İzlenmemiş Filmler</h3>
+    <!--
+    <div class="to-watch">
+        <app-movie-tiles *ngFor="let movie of yetToWatchMovies" [imageUrl]="movie.image"
+        [isWatched]="movie.isWatched" [isFav]="movie.isFav"
+        (favClick)="onFavClick(movie)" (watchedClick)="onWatchedClick(movie)"></app-movie-tiles>
+    </div>
+    -->
+
+    <div class="to-watch">
+        <app-movie-tiles *ngFor="let movie of yetToWatchMovies" [imageUrl]="movie.image"
+        [isWatched]="movie.isWatched" [isFav]="movie.isFav"></app-movie-tiles>
+    </div>
+
+    <h3 style="margin-left: 30%;" *ngIf="watchedMovies.length">İzlenmiş Filmler</h3>
+    <!--
+    <div class="to-watch">
+        <app-movie-tiles
+        *ngFor="let movie of watchedMovies"
+        [imageUrl]="movie.image"
+        [id]="movie.id"
+        [isWatched]="movie.isWatched"
+        [isFav]="movie.isFav"
+        (favClick)="onFavClick(movie)"
+        (watchedClick)="onWatchedClick(movie)"
+        ></app-movie-tiles>
+    </div>
+-->
+
+<div class="to-watch">
+    <app-movie-tiles
+    *ngFor="let movie of watchedMovies"
+    [imageUrl]="movie.image"
+    [id]="movie.id"
+    [isWatched]="movie.isWatched"
+    [isFav]="movie.isFav"
+    ></app-movie-tiles>
+</div>
+
+</div>

@@ -1,0 +1,32 @@
+{
+    "movies":[
+        {
+            "id": 1,
+            "title": "Film 1",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202111/1815/NqFuRvlqSAXJcUc3NIfOtOZx.png",
+            "isWatched": false,
+            "isFav": false
+        },
+        {
+            "id": 2,
+            "title": "Film 2",
+            "image": "https://tr.web.img4.acsta.net/pictures/bzp/01/111544.jpg",
+            "isWatched": false,
+            "isFav": false
+        },
+        {
+            "id": 3,
+            "title": "Film 3",
+            "image": "https://cdn1.ntv.com.tr/gorsel/MjQVOPOjd0ewJcAbSWnPaw.jpg?width=1000&mode=crop&scale=both",
+            "isWatched": true,
+            "isFav": true
+        },
+        {
+            "id": 4,
+            "title": "Film 3",
+            "image": "https://lumiere-a.akamaihd.net/v1/images/p_cars3_19643_3ab8aca1.jpeg",
+            "isWatched": false,
+            "isFav": false
+        }
+    ]
+}
